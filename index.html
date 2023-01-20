@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,75 +9,144 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" /> -->
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
+    tailwind.config = {
         theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-          }
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+            }
         }
-      }
+    }
     </script>
-
 </head>
+
 <body>
     <div class="md:fixed w-60 h-full">
-       <div class="w-60 bg-blue-100 h-full shadow-md  md:absolute">
-        <div class="relative w-30 px-1 hidden md:block">
-        <div class="mt-20 m-10 text-center">
-            <img src="img/myAvatar.png" class="m-auto w-20 rounded-full" alt="">
-            <p>Fawaz Ibraheem <i class="fas fa-bolt"></i></p>
-        </div>
-        <ul class="mt-20 relative">
-            <li class="relative">
-                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Home</a>
-            </li>
-            <li class="relative">
-                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">About Me</a>
-            </li>
-            <li class="relative">
-                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Portfolio</a>
-            </li>
-            <li class="relative">
-                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Blog</a>
-            </li>
-            <li class="relative">
-                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">Contact Me</a>
-            </li>
-        </ul>
-    </div>
-    </div>
-    </div>
-
-
-<div class="flex">
-
-    <div class="md:ml-60 p-5 bg-white md:pt-20 mt-20">
-        <div class="md:flex mb-20">
-            <div class="mx-5">
-            <svg fill="#6dc0f3" version="1.1" class="hidden md:block absolute right-28 top-0 z-0" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360px" height="360px" viewBox="0 0 595.02 595.02" xml:space="preserve" stroke="#6dc0f3">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="0" y="0" width="595.02" height="595.02" rx="297.51" fill="#6dc0f3" strokewidth="0"></rect></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M507.529,87.493c-27.264-27.264-59.022-48.672-94.396-63.635C376.489,8.358,337.588,0.5,297.511,0.5 c-40.078,0-78.979,7.858-115.624,23.358c-35.373,14.961-67.132,36.371-94.395,63.635c-27.264,27.263-48.673,59.022-63.635,94.395 C8.358,218.532,0.5,257.434,0.5,297.511c0,40.077,7.858,78.979,23.358,115.623c14.961,35.373,36.371,67.132,63.635,94.396 c27.263,27.263,59.022,48.672,94.395,63.634c36.645,15.5,75.546,23.358,115.624,23.358c40.077,0,78.979-7.858,115.623-23.358 c35.373-14.961,67.133-36.371,94.396-63.634c27.263-27.264,48.673-59.022,63.634-94.396 c15.499-36.645,23.358-75.546,23.358-115.623c0-40.077-7.858-78.979-23.358-115.624 C556.202,146.515,534.792,114.756,507.529,87.493z M297.511,551.682c-140.375,0-254.171-113.797-254.171-254.171 c0-140.375,113.796-254.171,254.171-254.171c140.374,0,254.171,113.796,254.171,254.171 C551.682,437.885,437.885,551.682,297.511,551.682z"></path> <path d="M297.511,595.021c-40.146,0-79.112-7.872-115.818-23.397c-35.433-14.988-67.245-36.434-94.553-63.741 c-27.31-27.31-48.755-59.122-63.742-94.555C7.872,376.623,0,337.656,0,297.511c0-40.145,7.872-79.112,23.397-115.818 c14.987-35.432,36.433-67.245,63.742-94.553c27.308-27.309,59.12-48.755,94.553-63.742C218.399,7.872,257.366,0,297.511,0 c40.146,0,79.112,7.872,115.817,23.397c35.435,14.988,67.247,36.434,94.555,63.742c27.31,27.31,48.755,59.123,63.741,94.553 c15.525,36.706,23.397,75.673,23.397,115.818c0,40.144-7.872,79.11-23.397,115.817c-14.985,35.432-36.432,67.244-63.741,94.555 c-27.31,27.31-59.122,48.755-94.555,63.741C376.623,587.149,337.656,595.021,297.511,595.021z M297.511,1 C257.5,1,218.665,8.845,182.082,24.318c-35.314,14.937-67.02,36.311-94.236,63.528c-27.218,27.217-48.591,58.923-63.528,94.236 C8.845,218.665,1,257.5,1,297.511s7.845,78.847,23.318,115.429c14.936,35.312,36.31,67.019,63.528,94.236 c27.217,27.216,58.922,48.59,94.236,63.526c36.582,15.474,75.417,23.319,115.429,23.319c40.011,0,78.847-7.846,115.429-23.319 c35.312-14.936,67.019-36.309,94.236-63.526c27.219-27.22,48.592-58.925,63.526-94.236 c15.474-36.584,23.319-75.42,23.319-115.429c0-40.011-7.846-78.847-23.319-115.429c-14.935-35.312-36.309-67.017-63.526-94.236 c-27.217-27.216-58.922-48.59-94.236-63.528C376.357,8.845,337.521,1,297.511,1z M297.511,552.182 c-68.025,0-131.979-26.49-180.08-74.592C69.33,429.489,42.84,365.535,42.84,297.511c0-68.025,26.49-131.979,74.591-180.08 S229.486,42.84,297.511,42.84c68.024,0,131.979,26.49,180.079,74.591c48.102,48.101,74.592,112.055,74.592,180.08 c0,68.024-26.49,131.979-74.592,180.079C429.489,525.691,365.535,552.182,297.511,552.182z M297.511,43.84 c-67.758,0-131.46,26.386-179.373,74.298S43.84,229.753,43.84,297.511s26.386,131.46,74.298,179.372 c47.913,47.912,111.615,74.299,179.373,74.299s131.46-26.387,179.372-74.299s74.299-111.614,74.299-179.372 s-26.387-131.46-74.299-179.373C428.971,70.226,365.269,43.84,297.511,43.84z"></path> </g> </g> </g> </g></svg>
-                <p class="text-2xl font-bold">Hello, I am </p>
-                <h1 class="text-7xl my-5 font-black">Fawaz Ibraheem</h1>
-                <p class="font-extrabold text-3xl my-5 mb-10">I am a passionate <span class="typer" id="main" data-words="Web Developer, Tutor" data-delay="100" data-deleteDelay="1000"></span>
-                <span class="cursor" data-owner="main"></span></p>
-                <p class="text-gray-500 leading-9 text-2xl">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+        <div class="w-60 bg-blue-100 h-full shadow-md  md:absolute">
+            <div class="relative w-30 px-1 hidden md:block">
+                <div class="mt-20 m-10 text-center">
+                    <img src="img/myAvatar.png" class="m-auto w-20 rounded-full" alt="">
+                    <p>Fawaz Ibraheem <i class="fas fa-bolt"></i></p>
+                </div>
+                <ul class="mt-20 relative">
+                    <li class="relative">
+                        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#home" data-mdb-ripple="true" data-mdb-ripple-color="dark">Home</a>
+                    </li>
+                    <li class="relative">
+                        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#about" data-mdb-ripple="true" data-mdb-ripple-color="dark">About Me</a>
+                    </li>
+                    <li class="relative">
+                        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#portfolio" data-mdb-ripple="true" data-mdb-ripple-color="dark">Portfolio</a>
+                    </li>
+                    <!-- <li class="relative">
+                        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#blog" data-mdb-ripple="true" data-mdb-ripple-color="dark">Blog</a>
+                    </li> -->
+                    <li class="relative">
+                        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#contact" data-mdb-ripple="true" data-mdb-ripple-color="dark">Contact Me</a>
+                    </li>
+                </ul>
             </div>
-            <img src="img/myAvatar.png" class="m-auto z-10 w-40 md:w-auto rounded-full" alt="">
-
         </div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam, quam assumenda distinctio voluptate atque mollitia nemo excepturi, aperiam fugiat. Nemo impedit placeat sunt delectus autem quam esse, ratione nulla facilis distinctio nobis unde aperiam, optio suscipit voluptatum, libero ab tempora laudantium tempore qui quas dolorum illum. Ab, tempore quaerat! Totam impedit iste beatae error laborum repudiandae? Quisquam earum recusandae mollitia repudiandae, debitis est, sunt quo incidunt molestias maxime eos voluptates ipsa dolore nesciunt blanditiis nam consequuntur quasi libero minus iure rerum quia quos explicabo possimus enim? Pariatur nam cupiditate sequi provident! Enim doloribus reiciendis, sapiente porro impedit tempora ipsa quis, optio esse, nam rem facere asperiores corporis, ipsum? Illo hic reprehenderit praesentium asperiores, possimus perferendis magni. Accusamus, optio sunt magnam illo, placeat itaque ullam corporis adipisci magni vero quos eligendi? Culpa iure eum veritatis vitae pariatur quisquam, accusantium, sed veniam qui ab rerum, dicta porro, repudiandae architecto dolores esse nulla nihil obcaecati enim soluta numquam magni labore illum unde magnam! Saepe eius, aspernatur amet iusto sequi voluptas praesentium doloremque eveniet quasi accusamus corporis, minus quod rem corrupti ut maxime, nam cumque earum. Voluptate corporis, praesentium sapiente quasi harum velit laudantium laboriosam modi culpa quo quod tenetur placeat tempore itaque blanditiis necessitatibus? Explicabo odio, quibusdam quae labore eveniet aut error? Tempore ullam fugit cumque officia. Possimus deserunt praesentium odit reprehenderit, commodi corporis laboriosam, dicta iusto quod dolorum pariatur, magnam natus tempore optio inventore blanditiis quibusdam voluptatibus tempora asperiores nesciunt atque placeat obcaecati fuga veniam. In eligendi dolorem reprehenderit similique aliquid consequuntur eum nam exercitationem cupiditate, aliquam corporis ex deserunt dicta velit magnam quaerat assumenda adipisci maxime. Excepturi suscipit asperiores porro nesciunt quas aliquam corrupti molestias magnam qui voluptatum voluptatibus quibusdam sequi, ratione numquam fugiat necessitatibus quidem nulla iusto harum reiciendis labore officia consectetur illo. Natus at adipisci autem, officiis libero explicabo commodi, dolorem minus veniam, deserunt doloribus facilis? Quasi quas quod provident aperiam neque earum hic, totam unde, id sed ipsum velit repudiandae vero vitae rerum perspiciatis optio quis, recusandae officia ea rem blanditiis. Impedit cumque ea rerum quam quos odio quia sunt, unde aut hic aliquid saepe repudiandae quis placeat sint maxime dolores explicabo, fuga! Aperiam doloribus nostrum perspiciatis, facere incidunt doloremque fugit distinctio iure totam maxime placeat consequuntur molestias non adipisci aliquam odio repellendus! Magni reprehenderit ex nostrum assumenda iusto eligendi illum quibusdam sint facilis corporis labore sit in nesciunt eum exercitationem ab placeat hic, cupiditate nobis alias eveniet provident repudiandae. Fugiat delectus velit ipsam recusandae animi numquam nostrum, at laborum voluptatum voluptatibus officia soluta quae alias omnis dignissimos modi? Laborum autem modi magnam facilis, voluptatem deleniti explicabo eius consequatur eaque quis similique corrupti quasi tempore quos accusamus reiciendis deserunt enim molestias sint qui cum! Sit error, cupiditate at alias sed accusamus corporis minus numquam, explicabo magni ab. Cumque necessitatibus dolores nobis numquam delectus minima sed repellat pariatur quis et libero aliquid amet sit, molestias nulla facere quod est inventore! Quasi laudantium corporis doloribus nam tenetur laboriosam delectus, facere commodi voluptate eius quo mollitia, praesentium. Quam at dolorem, ea eos, molestias error doloremque. Totam, modi et error, pariatur magnam itaque debitis architecto corrupti iste, assumenda dignissimos tenetur. Ipsam dolor in, quaerat, obcaecati molestiae, voluptatibus dicta ea veritatis recusandae non, ad sit velit iure. Exercitationem minus ipsa mollitia maxime? Quam eum, laboriosam molestiae natus nobis ducimus aliquid tempore aspernatur distinctio dolore, iste repellendus consequatur! Tempore atque, neque enim inventore quo explicabo laborum labore obcaecati, voluptatibus esse sint, sapiente quos reprehenderit, quam magnam quisquam aliquam voluptatem ipsum molestiae doloremque expedita nobis ab nihil modi. Cum fugit repellendus ratione aspernatur assumenda architecto nihil cupiditate ipsam porro quae doloribus tempora enim culpa vitae consequatur quisquam inventore ducimus illo ut adipisci repudiandae voluptatibus corporis consectetur, nulla. Nobis tempora iure voluptatibus incidunt ipsa recusandae assumenda ipsam. Libero rerum ea repellat impedit mollitia, totam molestiae obcaecati? Odit, ut architecto libero iusto suscipit distinctio doloremque hic provident voluptatem molestias optio eius quaerat dolorum deleniti ipsum nobis. Omnis amet vero voluptatibus accusantium quas, non sint architecto illum laudantium repellendus facere, dolor iste eveniet molestiae repellat, quis temporibus culpa veniam ducimus hic! Dicta vitae nostrum repudiandae alias dignissimos. Ea voluptas quasi voluptate modi quaerat quidem harum inventore, praesentium, eos repudiandae earum maxime provident aliquam non sit ipsum eligendi alias. Voluptatem et modi ipsam voluptates est magni, expedita adipisci vero nulla iure tempore veritatis nam, similique explicabo numquam! Sint repudiandae magni itaque, optio alias neque debitis reprehenderit doloremque possimus perferendis a perspiciatis ratione impedit illo, nemo provident natus animi pariatur, reiciendis veniam fugiat quibusdam quod accusamus ea nulla? Laborum fugiat quia dolore sit minus aliquid facere quaerat asperiores quae fugit, doloremque fuga dolorem laboriosam voluptatibus officiis esse adipisci nesciunt provident ex quis perspiciatis sapiente molestias. Inventore dolorum, necessitatibus earum quae laudantium nam similique expedita voluptas dolores numquam consequuntur excepturi ab, cupiditate voluptatum architecto aliquid illum corporis est. Dignissimos esse inventore voluptates? Facilis, iusto consequatur veniam ut obcaecati non sapiente dignissimos mollitia libero quibusdam, delectus odit et sunt enim fuga ducimus voluptatem optio exercitationem qui sint eius cum officia, rerum ad consectetur. Distinctio rem aspernatur quae praesentium debitis numquam eos, excepturi ipsam maiores voluptatum et aliquid saepe recusandae eligendi repellendus similique facilis dolores magnam cumque id nobis natus. Aut nihil beatae, molestiae. Modi quasi at, qui, repellat odio, voluptas obcaecati eos aspernatur quisquam perspiciatis laborum hic rem impedit fugiat, est. Impedit quidem ducimus et, quos natus, tenetur unde doloremque quod quae. Soluta sunt veniam repellendus saepe quas, eius dicta unde mollitia blanditiis, in ut expedita nemo officiis cumque asperiores pariatur numquam libero cum beatae fugiat iure labore id sed. Perspiciatis officiis in tenetur quo eveniet, repellat pariatur fugiat recusandae autem error ut accusantium soluta asperiores sed consequuntur fuga, ex aliquid veritatis molestiae enim, nihil ducimus? Sapiente, adipisci, vitae cum quibusdam mollitia sit distinctio consectetur, voluptate velit repellat accusantium assumenda consequuntur reiciendis voluptatem quasi? Voluptas quas odit vel nihil culpa possimus dolor officia eaque dignissimos quia facere laboriosam, debitis quaerat. Assumenda illo natus in necessitatibus, adipisci veniam quibusdam nihil cupiditate pariatur eveniet iste nisi expedita quas, accusamus tempora explicabo incidunt, voluptatibus. Quo, voluptate impedit nesciunt debitis culpa atque in quod dolore sed cum saepe ex, ipsum, tempore deserunt accusantium aperiam quidem ducimus reiciendis, enim animi mollitia veritatis obcaecati error voluptas alias. Dolorem distinctio nam labore ad animi quia similique ab impedit facilis debitis, consectetur voluptatibus quam repudiandae, ut voluptates, doloribus ipsum. Reiciendis est laborum nisi, accusantium, officiis rerum dignissimos error quod laudantium architecto obcaecati sunt eveniet eius pariatur, rem totam. Exercitationem laborum illum, possimus quidem commodi maiores incidunt nam quod excepturi veritatis aspernatur reiciendis unde deserunt corrupti fugiat ipsa vitae eius minus asperiores. Eligendi modi voluptate, accusantium corporis possimus, doloremque rem, quas quibusdam libero magnam sunt iure ad accusamus harum cupiditate, aliquid. Tempore possimus adipisci beatae voluptate mollitia quae ad consequatur quos maiores rerum tenetur dolor aliquid maxime ex iure quas facere itaque odit ipsum error nulla, minus corporis laboriosam. Totam nisi fugiat reiciendis cum dicta natus ut omnis, labore excepturi, consequatur aliquam, commodi quibusdam repudiandae neque enim aut dignissimos. Quae, repellat. Aliquid perspiciatis quaerat nam voluptatum rerum quam quos ipsam, accusamus temporibus error nobis officiis tenetur quis numquam voluptate saepe velit reprehenderit! Quae dolores unde dignissimos at rem deserunt repellat officia assumenda vel iusto. Maiores aspernatur officiis, aliquid voluptates doloribus debitis minus magni tenetur repellat, dolorem deserunt. Inventore, dolor ratione, minus nesciunt nostrum numquam repellat odio deserunt eum cupiditate! Quidem, ab modi! Eaque deleniti ratione fuga praesentium eum, eos sequi suscipit illum, explicabo unde molestias atque perspiciatis. Sit id eos aperiam obcaecati, quis exercitationem quasi modi nobis non ipsam ipsa, iusto cum quod eum expedita iste quam at nam voluptatem excepturi, facilis ut! Quis, dolore explicabo possimus similique! Vel accusantium natus veritatis harum iste distinctio debitis voluptate beatae ad aspernatur minus laborum, cum, inventore voluptas soluta assumenda, delectus aliquid. Magnam sed doloremque labore natus non repudiandae perferendis nam suscipit, provident cumque delectus debitis dolorum fugit nulla eligendi facilis dignissimos enim velit a! Tempora dolor facere, consequuntur quas fuga accusantium accusamus eaque illum veniam incidunt. A repellat voluptas porro similique pariatur. Animi, fuga. Est ipsam, laboriosam eum culpa iste earum vero provident debitis vitae eaque corrupti excepturi recusandae voluptatibus unde nulla aliquid soluta magnam impedit blanditiis tempore illo doloremque reiciendis quae deleniti. Nobis dolor aperiam vero quaerat consequuntur modi sequi nihil ab soluta libero quasi saepe deleniti iste porro tenetur nesciunt expedita velit reprehenderit voluptate, illo? Recusandae nisi, aliquam vero blanditiis praesentium hic architecto, eum corrupti excepturi ipsum voluptate nesciunt deleniti mollitia tenetur deserunt dolorem voluptatum ducimus ut nobis necessitatibus porro. Magnam officia aliquid itaque ratione in voluptates cumque atque ducimus veritatis illo sapiente a animi deleniti, debitis ipsum tempora necessitatibus dolorum omnis iste beatae ex unde. Veritatis, magni a cupiditate culpa tempora at iste, architecto dignissimos! Dignissimos asperiores assumenda eius quos laborum sequi cupiditate placeat perferendis nam neque eligendi fugit molestiae, minus at illum dolore officiis consectetur maiores laudantium in dolores quam? Totam facere nemo porro eligendi eos, veritatis aut, delectus molestias vel. Dicta ea expedita, odio, aspernatur repellat repudiandae cumque aperiam minus pariatur nihil dolorem eaque quod enim? Excepturi magni possimus consequatur, a eligendi fuga illum expedita nobis porro placeat qui optio dolore praesentium esse enim quibusdam maiores voluptates corrupti atque quam totam beatae omnis doloribus quasi culpa. Blanditiis sapiente ad, ipsum neque nostrum cum recusandae et possimus tempore totam eligendi qui sed repudiandae nesciunt dolores animi dolorem laborum commodi. Ea labore, enim neque delectus dolorum architecto, in optio culpa repudiandae nostrum, quas, quae expedita voluptatibus fugiat laudantium dignissimos nobis natus necessitatibus quasi. Optio natus maxime rerum vel aliquam iusto quisquam eligendi dolorem omnis et, obcaecati, provident nesciunt, cumque impedit deleniti, placeat a ullam? Doloremque pariatur maxime veritatis sequi atque, ratione repellat, illo architecto libero temporibus quis obcaecati tempora vel, soluta corrupti ullam aspernatur ducimus rerum. Facilis eligendi maiores quidem debitis libero expedita quaerat, sequi a eius? Recusandae, et voluptas perspiciatis repellendus laborum cupiditate iusto, magnam? Commodi unde in ex modi culpa officiis fugit, labore explicabo deserunt nam impedit libero inventore eius similique aliquam odio, dolorem quibusdam doloribus nesciunt! Quaerat velit mollitia nihil neque numquam aut expedita consequuntur ut. Totam pariatur dolorum esse maxime laboriosam fugiat, magni consequatur temporibus ex quia! Blanditiis, odio incidunt eveniet cupiditate vel quo dolorem unde, ab iusto animi itaque molestias delectus soluta esse! Quam ad eaque reprehenderit eveniet hic at consequuntur aspernatur, blanditiis mollitia. Reiciendis ipsa culpa dolore tenetur, sint ullam suscipit dolor, quas nobis, non fuga, unde! Totam ducimus cupiditate accusamus eveniet, esse aperiam magni iusto, aliquam inventore, ipsam ab earum et. Eius voluptate repudiandae similique eveniet, dolorem ex dolore mollitia perferendis quo minima culpa doloribus nam. Molestiae, in excepturi. Doloribus minus voluptas, architecto quia officia harum nisi ullam delectus accusantium pariatur et quod vel amet veniam repudiandae, nulla nesciunt doloremque laboriosam sequi nam eligendi deserunt? Impedit itaque velit perspiciatis maiores, dignissimos nihil eos fugit. Mollitia nulla possimus, cupiditate provident soluta eius et ullam temporibus voluptatem. Quaerat, soluta possimus. Pariatur explicabo temporibus tempore excepturi iure quae cum magni, voluptatibus eaque unde quis ullam? Adipisci tenetur recusandae numquam placeat. Animi natus quisquam dignissimos dolores aut eaque distinctio quasi incidunt consequatur tempora, cumque. Commodi minus consectetur perferendis sed exercitationem omnis ullam, similique corrupti vero adipisci impedit, id deserunt blanditiis! Sit laboriosam tempore exercitationem, voluptas reprehenderit quis fuga debitis dolorum maxime quibusdam, molestiae dolores itaque nemo aliquam reiciendis error accusamus quas, assumenda ratione quo et repellendus veniam incidunt velit. Eligendi dicta qui ab tenetur repudiandae facere eveniet mollitia assumenda magni corporis praesentium ipsam quia aspernatur quam similique rerum labore optio neque molestiae quod, maxime officia porro molestias amet. Molestiae maiores maxime velit, ab eligendi odio hic unde libero molestias quod voluptate, error iusto eveniet dignissimos sint fugiat necessitatibus fugit. Similique placeat magni maxime dolore adipisci possimus, commodi officia quibusdam eos sit non, illo corrupti aliquid nulla iure dicta atque tenetur dignissimos saepe, doloremque? Assumenda voluptates molestiae quo dolor maxime veniam fuga. Quas animi cumque eveniet harum assumenda esse saepe suscipit! Ducimus eveniet doloremque nobis facilis reiciendis error, cumque numquam rerum incidunt consequatur nam. Totam mollitia nulla tempore amet maiores quibusdam, at. Amet, eum sapiente consequatur ipsa?</p>
     </div>
-</div>
+    <div class="flex">
+        <div class="md:ml-60 p-5 bg-white">
+            <div id="home" class="md:flex md:items-center h-screen">
+                <div class="mx-5 md:w-1/2">
+                    <img src="img/circle.svg" class="hidden lg:block absolute right-28 top-0 z-0" alt="">
+                    <p class="text-2xl font-bold">Hello, I am </p>
+                    <h1 class="text-7xl my-5 font-black">Fawaz Ibraheem</h1>
+                    <p class="font-extrabold text-3xl my-5 mb-10">I am a passionate <span class="typer" id="main" data-words="Web Developer, Tutor" data-delay="100" data-deleteDelay="1000"></span>
+                        <span class="cursor" data-owner="main"></span></p>
+                    <p class="text-gray-500 leading-9 text-2xl">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                </div>
+                <img src="img/myAvatar.png" class="m-auto z-10 w-40 md:w-60 lg:w-auto rounded-full" alt="">
+            </div>
+            <div id="about" class="mt-5 md:flex md:flex-col md:justify-center h-screen">
+                <h3 class="text-2xl lg:text-3xl text-mono uppercase tracking-wide drop-shadow-2xl">Education & Skills</h3>
+                <div class="mt-5 md:flex">
+                    <div class="mx-5 md:w-1/2">
+                        <p class="text-gray-500 leading-9 text-2xl">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    </div>
+                    <div class="mx-5 md:w-1/2">
+                        <p class="text-2xl font-bold">My skills</p>
+                        <p class="text-gray-500 leading-8 text-lg">I am a back-end developer with over 4 years of experience working with PHP and NodeJS. I code and create web applications to automate repitive tasks. I as well like to work with new people, always!</p>
+                        <div class="ml-10 w-full mt-16 px-4 ">
+                            <div class="mb-12">
+                                <div class="bg-white relative h-[10px] w-full rounded-2xl">
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/codeigniter-plain-wordmark.svg?size=128&color=e15151" class="w-8"><p class="text-gray-700"> CodeIgniter</p></div>
 
+                                    <div class="bg-blue-400 absolute top-0 left-0 h-full w-[90%] rounded-2xl">
+                                        <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                            <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
+                                            90%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-12">
+                                <div class="bg-white relative h-[10px] w-full rounded-2xl">
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/laravel-plain-wordmark.svg?size=128&color=e15151" class="w-8"><p class="text-gray-700"> Laravel 9</p></div>
 
+                                    <div class="bg-blue-400 absolute top-0 left-0 h-full w-[50%] rounded-2xl">
+                                        <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                            <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
+                                            50%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-12">
+                                <div class="bg-white relative h-[10px] w-full rounded-2xl">
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/nodejs-original.svg?size=57&color=24df0c" class="w-8"><p class="text-gray-700"> NodeJS</p></div>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> -->
-<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+                                    <div class="bg-blue-400 absolute top-0 left-0 h-full w-[60%] rounded-2xl">
+                                        <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                            <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
+                                            60%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-12">
+                                <div class="bg-white relative h-[10px] w-full rounded-2xl">
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/mysql-original.svg?size=57&color=24df0c" class="w-8"><p class="text-gray-700"> MySQL</p></div>
 
+                                    <div class="bg-blue-400 absolute top-0 left-0 h-full w-[70%] rounded-2xl">
+                                        <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                            <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
+                                            70%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-12">
+                                <div class="bg-white relative h-[10px] w-full rounded-2xl">
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/ssh-original-wordmark.svg?size=57&color=24df0c" class="w-8"><p class="text-gray-700"> &nbsp; SSH</p></div>
+
+                                    <div class="bg-blue-400 absolute top-0 left-0 h-full w-[55%] rounded-2xl">
+                                        <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
+                                            <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
+                                            55%
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> -->
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </body>
+
 </html>
