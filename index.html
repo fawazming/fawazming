@@ -44,6 +44,9 @@
                         <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#about" data-mdb-ripple="true" data-mdb-ripple-color="dark">About Me</a>
                     </li>
                     <li class="relative">
+                        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#experience" data-mdb-ripple="true" data-mdb-ripple-color="dark">Experience</a>
+                    </li>
+                    <li class="relative">
                         <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#portfolio" data-mdb-ripple="true" data-mdb-ripple-color="dark">Portfolio</a>
                     </li>
                     <!-- <li class="relative">
@@ -70,19 +73,34 @@
                 <img src="img/myAvatar.png" class="m-auto z-10 w-40 md:w-60 lg:w-auto rounded-full" alt="">
             </div>
             <div id="about" class="mt-5 md:flex md:flex-col md:justify-center h-screen">
-                <h3 class="text-2xl lg:text-3xl text-mono uppercase tracking-wide drop-shadow-2xl">Education & Skills</h3>
-                <div class="mt-5 md:flex">
-                    <div class="mx-5 md:w-1/2">
-                        <p class="text-gray-500 leading-9 text-2xl">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                <h3 class="text-2xl lg:text-3xl text-mono uppercase tracking-wide drop-shadow-2xl hidden md:block ">Education & Skills</h3>
+                <div class="mt-20 md:mt-5 md:flex">
+                    <div class="hidden md:block mx-5 md:w-1/2">
+                        <div class="bg-sky-100 w-full py-5  drop-shadow-lg mb-1">
+                            <p class="absolute bg-sky-800 text-white -ml-5 p-1 px-3 drop-shadow-2xl">2019 - 2020</p>
+                            <h4 class="font-bold text-xl mb-1 text-gray-800 pt-14 pl-5">Diploma, Programming</h4>
+                            <p class="font-thin pl-5">Rayyan Academy, Sagamu</p>
+                        </div>
+                        <div class="bg-sky-100 w-full py-5  drop-shadow-lg mb-1">
+                            <p class="absolute bg-sky-800 text-white -ml-5 p-1 px-3 drop-shadow-2xl">2014 - 2019</p>
+                            <h4 class="font-bold text-xl mb-1 text-gray-800 pt-14 pl-5">BSc. Computer Science</h4>
+                            <p class="font-thin pl-5">Federal University of Agriculture, Abeokuta</p>
+                        </div>
+                        <div class="bg-sky-100 w-full py-5  drop-shadow-lg mb-1">
+                            <p class="absolute bg-sky-800 text-white -ml-5 p-1 px-3 drop-shadow-2xl">2006 - 2012</p>
+                            <h4 class="font-bold text-xl mb-1 text-gray-800 pt-14 pl-5">SSCE</h4>
+                            <p class="font-thin pl-5">Mayflower School, Ikenne</p>
+                        </div>
                     </div>
                     <div class="mx-5 md:w-1/2">
-                        <p class="text-2xl font-bold">My skills</p>
+                        <p class="text-2xl font-bold uppercase md:capitalize">my skills</p>
                         <p class="text-gray-500 leading-8 text-lg">I am a back-end developer with over 4 years of experience working with PHP and NodeJS. I code and create web applications to automate repitive tasks. I as well like to work with new people, always!</p>
                         <div class="ml-10 w-full mt-16 px-4 ">
                             <div class="mb-12">
                                 <div class="bg-white relative h-[10px] w-full rounded-2xl">
-                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/codeigniter-plain-wordmark.svg?size=128&color=e15151" class="w-8"><p class="text-gray-700"> CodeIgniter</p></div>
-
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/codeigniter-plain-wordmark.svg?size=128&color=e15151" class="w-8">
+                                        <p class="text-gray-700"> CodeIgniter</p>
+                                    </div>
                                     <div class="bg-blue-400 absolute top-0 left-0 h-full w-[90%] rounded-2xl">
                                         <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
                                             <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
@@ -93,8 +111,9 @@
                             </div>
                             <div class="mb-12">
                                 <div class="bg-white relative h-[10px] w-full rounded-2xl">
-                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/laravel-plain-wordmark.svg?size=128&color=e15151" class="w-8"><p class="text-gray-700"> Laravel 9</p></div>
-
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/laravel-plain-wordmark.svg?size=128&color=e15151" class="w-8">
+                                        <p class="text-gray-700"> Laravel 9</p>
+                                    </div>
                                     <div class="bg-blue-400 absolute top-0 left-0 h-full w-[50%] rounded-2xl">
                                         <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
                                             <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
@@ -105,8 +124,9 @@
                             </div>
                             <div class="mb-12">
                                 <div class="bg-white relative h-[10px] w-full rounded-2xl">
-                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/nodejs-original.svg?size=57&color=24df0c" class="w-8"><p class="text-gray-700"> NodeJS</p></div>
-
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/nodejs-original.svg?size=57&color=24df0c" class="w-8">
+                                        <p class="text-gray-700"> NodeJS</p>
+                                    </div>
                                     <div class="bg-blue-400 absolute top-0 left-0 h-full w-[60%] rounded-2xl">
                                         <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
                                             <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
@@ -117,8 +137,9 @@
                             </div>
                             <div class="mb-12">
                                 <div class="bg-white relative h-[10px] w-full rounded-2xl">
-                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/mysql-original.svg?size=57&color=24df0c" class="w-8"><p class="text-gray-700"> MySQL</p></div>
-
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/mysql-original.svg?size=57&color=24df0c" class="w-8">
+                                        <p class="text-gray-700"> MySQL</p>
+                                    </div>
                                     <div class="bg-blue-400 absolute top-0 left-0 h-full w-[70%] rounded-2xl">
                                         <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
                                             <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
@@ -129,8 +150,9 @@
                             </div>
                             <div class="mb-12">
                                 <div class="bg-white relative h-[10px] w-full rounded-2xl">
-                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/ssh-original-wordmark.svg?size=57&color=24df0c" class="w-8"><p class="text-gray-700"> &nbsp; SSH</p></div>
-
+                                    <div class="flex items-end absolute bottom-[-2px] -translate-x-1/2 -translate-y-1/2 "><img src="https://icongr.am/devicon/ssh-original-wordmark.svg?size=57&color=24df0c" class="w-8">
+                                        <p class="text-gray-700"> &nbsp; SSH</p>
+                                    </div>
                                     <div class="bg-blue-400 absolute top-0 left-0 h-full w-[55%] rounded-2xl">
                                         <span class="bg-blue-400 absolute -right-4 bottom-full mb-2 rounded-sm py-1 px-2 text-xs font-semibold text-white">
                                             <span class="bg-blue-400 absolute bottom-[-2px] left-1/2 -z-10 h-2 w-2 -translate-x-1/2 rotate-45 rounded-sm"></span>
@@ -139,6 +161,54 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experience" class="mt-5 md:flex md:flex-col md:justify-center h-screen">
+                <h3 class="text-2xl lg:text-3xl text-mono uppercase tracking-wide drop-shadow-2xl mb-5">experience</h3>
+                <div class="mx-5 w-full">
+                    <div class="bg-sky-100 w-full py-5 flex drop-shadow-lg mb-1">
+                        <img src="img/rayyan.png" class="hidden md:block w-2/12 md:w-20 md:ml-3" alt="">
+                        <div class="w-full md:w-8/12">
+                           <h4 class="font-bold text-xl mb-1 text-gray-800 pl-5">Diploma, Programming</h4>
+                           <p class="font-thin pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore, nobis suscipit. Voluptates aspernatur nesciunt quae repellendus maxime quos. Fugit qui natus iusto hic sunt mollitia est praesentium, in illo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, minus!</p>
+                        </div>
+                        <span class="hidden md:block absolute right-7 bg-sky-800 text-white p-1 px-3 drop-shadow-2xl">FULL TIME</span>
+                    </div>
+                    <div class="bg-sky-100 w-full py-5 flex drop-shadow-lg mb-1">
+                        <img src="img/acetech.png" class="hidden md:block w-2/12 md:w-20 md:ml-3" alt="">
+                        <div class="w-full md:w-8/12">
+                           <h4 class="font-bold text-xl mb-1 text-gray-800 pl-5">Diploma, Programming</h4>
+                           <p class="font-thin pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore, nobis suscipit. Voluptates aspernatur nesciunt quae repellendus maxime quos. Fugit qui natus iusto hic sunt mollitia est praesentium, in illo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, minus!</p>
+                        </div>
+                        <span class="hidden md:block absolute right-7 bg-sky-800 text-white p-1 px-3 drop-shadow-2xl">FULL TIME</span>
+                    </div>
+                    <div class="bg-sky-100 w-full py-5 flex drop-shadow-lg mb-1">
+                        <img src="img/rayyan.png" class="hidden md:block w-2/12 md:w-20 md:ml-3" alt="">
+                        <div class="w-full md:w-8/12">
+                           <h4 class="font-bold text-xl mb-1 text-gray-800 pl-5">Diploma, Programming</h4>
+                           <p class="font-thin pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore, nobis suscipit. Voluptates aspernatur nesciunt quae repellendus maxime quos. Fugit qui natus iusto hic sunt mollitia est praesentium, in illo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, minus!</p>
+                        </div>
+                        <span class="hidden md:block absolute right-7 bg-sky-800 text-white p-1 px-3 drop-shadow-2xl">FULL TIME</span>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio" class="mt-5 md:flex md:flex-col md:justify-center h-screen">
+                <h3 class="text-2xl lg:text-3xl text-mono uppercase tracking-wide drop-shadow-2xl mb-5">portfolio</h3>
+                <div class="mx-5 md:flex w-full">
+                    <div class="bg-sky-50 w-full py-5 flex drop-shadow-lg mb-1">
+                        <img src="img/rayyan.png" class="hidden md:block w-2/12 md:w-20 md:ml-3" alt="">
+                        <div class="w-full md:w-8/12">
+                           <h4 class="font-bold text-xl mb-1 text-gray-800 pl-5">Diploma, Programming</h4>
+                           <p class="font-thin pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore, nobis suscipit. Voluptates aspernatur nesciunt quae repellendus maxime quos. Fugit qui natus iusto hic sunt mollitia est praesentium, in illo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, minus!</p>
+                        </div>
+                    </div>
+                    <div class="bg-sky-50 w-full py-5 flex drop-shadow-lg mb-1">
+                        <img src="img/acetech.png" class="hidden md:block w-2/12 md:w-20 md:ml-3" alt="">
+                        <div class="w-full md:w-8/12">
+                           <h4 class="font-bold text-xl mb-1 text-gray-800 pl-5">Diploma, Programming</h4>
+                           <p class="font-thin pl-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore, nobis suscipit. Voluptates aspernatur nesciunt quae repellendus maxime quos. Fugit qui natus iusto hic sunt mollitia est praesentium, in illo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, minus!</p>
                         </div>
                     </div>
                 </div>
